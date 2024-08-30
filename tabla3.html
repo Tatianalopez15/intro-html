@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Cars</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 2px solid white;
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+        td {
+            background-color: black;
+            color: white;
+            font-size: 24px;
+        }
+        .rowspan-4 {
+            vertical-align: middle;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th colspan="2">Cars</th>
+        </tr>
+        <tr>
+            <th>Brand</th>
+            <th>Reference</th>
+        </tr>
+        <tr>
+            <td class="rowspan-4" rowspan="4">Mazda</td>
+            <td>CX-3</td>
+        </tr>
+        <tr>
+            <td>CX-5</td>
+        </tr>
+        <tr>
+            <td>CX60</td>
+        </tr>
+        <tr>
+            <td>323</td>
+        </tr>
+        <tr>
+            <td class="rowspan-2" rowspan="2">Renault</td>
+            <td>Sandero</td>
+        </tr>
+        <tr>
+            <td>Kwid</td>
+        </tr>
+        <tr>
+            <td>Chevrolet</td>
+            <td>Aveo</td>
+        </tr>
+    </table>
+
+</body>
+</html>
