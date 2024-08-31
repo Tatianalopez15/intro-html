@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Chats de WhatsApp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e5ddd5;
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .chat-row {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .chat-row:hover {
+            background-color: #f1f1f1;
+        }
+        .chat-cell {
+            padding: 10px;
+            vertical-align: top;
+        }
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ddd;
+        }
+        .chat-info {
+            padding-left: 10px;
+        }
+        .chat-info .name {
+            font-weight: bold;
+            color: #075e54;
+        }
+        .chat-info .last-message {
+            color: #666;
+            margin-top: 5px;
+        }
+        .chat-info .time {
+            text-align: right;
+            color: #999;
+            font-size: 0.9em;
+        }
+        .unread-badge {
+            background-color: #25d366;
+            color: #fff;
+            font-size: 0.8em;
+            border-radius: 50%;
+            padding: 5px 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Chat 1 -->
+        <tr class="chat-row">
+            <td class="chat-cell" style="width: 60px;">
+                <div class="profile-pic"></div>
+            </td>
+            <td class="chat-cell">
+                <div class="chat-info">
+                    <div class="name">Juan Pérez</div>
+                    <div class="last-message">¿Nos vemos mañana?</div>
+                </div>
+            </td>
+            <td class="chat-cell" style="width: 80px;">
+                <div class="time">10:45 AM</div>
+                <div class="unread-badge">2</div>
+            </td>
+        </tr>
+        <!-- Chat 2 -->
+        <tr class="chat-row">
+            <td class="chat-cell" style="width: 60px;">
+                <div class="profile-pic"></div>
+            </td>
+            <td class="chat-cell">
+                <div class="chat-info">
+                    <div class="name">Grupo Amigos</div>
+                    <div class="last-message">María: ¡Feliz cumpleaños!</div>
+                </div>
+            </td>
+            <td class="chat-cell" style="width: 80px;">
+                <div class="time">09:15 AM</div>
+                <div class="unread-badge">5</div>
+            </td>
+        </tr>
+        <!-- Chat 3 -->
+        <tr class="chat-row">
+            <td class="chat-cell" style="width: 60px;">
+                <div class="profile-pic"></div>
+            </td>
+            <td class="chat-cell">
+                <div class="chat-info">
+                    <div class="name">Mamá</div>
+                    <div class="last-message">No olvides comprar pan</div>
+                </div>
+            </td>
+            <td class="chat-cell" style="width: 80px;">
+                <div class="time">Ayer</div>
+            </td>
+        </tr>
+        <!-- Chat 4 -->
+        <tr class="chat-row">
+            <td class="chat-cell" style="width: 60px;">
+                <div class="profile-pic"></div>
+            </td>
+            <td class="chat-cell">
+                <div class="chat-info">
+                    <div class="name">Trabajo</div>
+                    <div class="last-message">Reunión a las 3 PM</div>
+                </div>
+            </td>
+            <td class="chat-cell" style="width: 80px;">
+                <div class="time">Lun</div>
+            </td>
+        </tr>
+        <!-- Chat 5 -->
+        <tr class="chat-row">
+            <td class="chat-cell" style="width: 60px;">
+                <div class="profile-pic"></div>
+            </td>
+            <td class="chat-cell">
+                <div class="chat-info">
+                    <div class="name">Papá</div>
+                    <div class="last-message">¿Dónde estás?</div>
+                </div>
+            </td>
+            <td class="chat-cell" style="width: 80px;">
+                <div class="time">Dom</div>
+                <div class="unread-badge">1</div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
